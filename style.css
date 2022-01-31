@@ -1,36 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root { 
+    --pale-blue: hsl(225, 100%, 94%); 
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225,100%,98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 img {
-    max-width: 100%;
+    width: 100%;
 }
 body {
     font-family: "Red Hat Display", sans-serif;
     font-size: 16px;
-    min-height: 100vh;
     background-image: url('./images/pattern-background-desktop.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #E0E8FF;
     display: grid;
     place-content: center;
+    height: 100vh;
 }
 main.container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     background-color: white;
-    border-radius: 2.5%;
+    border-radius: 0.95rem;
+    box-shadow: 0px 20px 16px 0px hsla(228, 87%, 40%, 0.15);
+    max-width: 450px;
+}
+.header-image {
+    flex-flow: 1; 
+    display: flex;
+} 
+.header-image img{
+    flex: 1;
+    border-radius: 0.95rem 0.95rem 0 0;
+}
+.order-summary-header, 
+.payment-btn {
+    padding: 8%;
+}
+.order-summary-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2rem;
+}
+.order-summary-header h1 {
+    flex: 1;
+    color: var(--dark-blue);
+}
+.order-summary-header p {
+    flex: 1;
+    line-height: 1.5;
+    text-align: center;
+    align-self: center;
+    color: var(--desaturated-blue)
+}
+.plan-info-summary {
+    background-color: #F8F9FE;
+    border-radius: 0.95rem;
+    flex-flow: 1 1 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 0.5rem;
+}
+.plan-info-summary .music-icon,
+.plan-info-summary .price-change-btn {
+    flex-flow: 1 1 15%;
+}
+.plan-info-summary .plan-price {
+    flex-flow: 2 1 60%;
+    align-self: center;
+    color: var(--dark-blue);
+}
+.plan-info-summary .plan-price p{
+    align-self: center;
+    color: var(--desaturated-blue);
+}
+.plan-info-summary .price-change-btn {
+    color: var(--dark-blue);
 }
 .plan-info {
-    background-color: #F8F9FE;
-    width: 100%;
+    padding: 0.5rem;
+}
+.plan-info-summary .price-change-btn a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+.btn {
+    font-weight: 900;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.payment-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.proceed-payment-btn {
+    flex: 1;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    flex-basis: 40%;
+    padding: 1rem;
+    border: 0;
+    border-radius: 0.95rem;
+    box-shadow: 0px 20px 16px 0px hsla(245, 75%, 52%, 0.23);
+}
+.proceed-payment-btn:hover {
+    opacity: 0.7;
+}
+.cancel-order-btn {
+    flex: 1;
+    align-self: center;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    flex-basis: 40%;
+    padding: 20px;
+}
+.cancel-order-btn:hover {
+    color: var(--dark-blue)
 }
 
 /*Attribution*/
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; flex: 1;}
 .attribution a { color: hsl(228, 45%, 44%); }
