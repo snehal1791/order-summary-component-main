@@ -134,7 +134,24 @@ main.container {
 .cancel-order-btn:hover {
     color: var(--dark-blue)
 }
-
+@media only screen and (max-width: 425px) {
+    body {
+        background-image: url('images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    main.container {
+        max-width: 87%;
+        flex: 1;
+        align-self: center;
+        margin: 2% 0;
+    }
+    
+}
 /*Attribution*/
 .attribution { font-size: 11px; text-align: center; flex: 1;}
 .attribution a { color: hsl(228, 45%, 44%); }
