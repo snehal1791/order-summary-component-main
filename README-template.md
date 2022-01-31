@@ -101,7 +101,13 @@ I would continue to improve my current skills on Semantic HTML, Flexbox and woul
 ### Useful resources
 
 - [Flexbox Tutorial (CSS): Real Layout Examples](https://www.youtube.com/watch?v=k32voqQhODc) - This is an amazing tutorial which helped me understand Flexbox. I'd recommend it to anyone still learning this concept.
+<<<<<<< HEAD
 - [Content Sectioning](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning) - This helped me for applying Semantic HTML5 to organize the contents of the application. I really liked this pattern and will use it going forward.
+=======
+- [Example resource 2](https://www.example.com) - This helped me for applying Flexbox to achive responsiveness. I really liked this pattern and will use it going forward.
+
+**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+>>>>>>> 45db96d0d392a16213714a73384bb786508867c7
 
 ## Author
 
