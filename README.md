@@ -26,12 +26,14 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
+Desktop view of the application:
 
 ![Deskstop](./images/desktopLive.png)
-Desktop view of the application.
+
+
+Mobile view of the application:
 
 ![Mobile](./images/mobileLive.png)
-Mobile view of the application.
 
 
 ### Links
